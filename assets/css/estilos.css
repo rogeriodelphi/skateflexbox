@@ -4,27 +4,27 @@
 }
 
 body {
-  background: #1D232A;
-  font-family: "Open Sans", "icones", sans-serif;
+  background-color: #1D232A;
+  font-family: 'Open Sans', 'icones', sans-serif;
   color: #FFFFFF;
 }
 
 .cabecalho {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#15191C;
+  background-color: #15191C;
   padding: 8px 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .cabecalho__menu i::before {
-  content: '\e904';
+  content: "\e904";
   font-size: 24px;
 }
 
 .cabecalho__notificacao i::before {
-  content: '\e906';
+  content: "\e906";
   font-size: 24px;
 }
 
@@ -80,40 +80,41 @@ body {
 
 .menu-lateral__link--inicio::before {
   content: "\e902";
-
 }
 
 .menu-lateral__link--videos::before {
   content: "\e90e";
-  
 }
 
 .menu-lateral__link--picos::before {
   content: "\e909";
-  
 }
 
 .menu-lateral__link--integrantes::before {
   content: "\e903";
-  
 }
 
 .menu-lateral__link--camisas::before {
   content: "\e900";
-  
 }
 
-.menu-lateral__link--partituras::before {
+.menu-lateral__link--pinturas::before {
   content: "\e90a";
-  
 }
 
 .principal {
   padding: 24px 16px;
+  display: grid;
+  gap: 16px;
 }
 
 .titulo-pagina {
   font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.titulo-secao {
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -124,7 +125,11 @@ body {
   background-color: #2C343A;
 }
 
-.cartao__conteudo{
+.cartao--destaque {
+  margin-bottom: 16px;
+}
+
+.cartao__conteudo {
   padding: 16px;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -155,23 +160,24 @@ body {
 
 .cartao__info--tempo::before {
   content: "\e90c";
-  margin-right: 8px;
+  margin-right: 8px;    
 }
 
 .cartao__info--visualizacao::before {
   content: "\e90f";
-  margin-right: 8px;
+  margin-right: 8px;    
 }
 
 .cartao__botao {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0048DC;
+  background-color: #0480DC;
   width: 40px;
   height: 40px;
   border-radius: 10px;
   font-size: 0.9rem;
+  justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
@@ -186,4 +192,9 @@ body {
 
 .cartao__botao--destaque::before {
   margin-right: 8px;
+}
+
+.secao {
+  display: grid;
+  gap: 16px;
 }
